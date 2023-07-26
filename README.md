@@ -1,3 +1,3 @@
 # ClinicaWeb
-Clinica Martinez Web 
-Segundo proyecto universidad
+MPA
+Centro Medico Martinez
