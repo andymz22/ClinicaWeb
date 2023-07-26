@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;400;500;600;800&display=swap');
+
+:root{
+    --bg-color: #fff;
+    --primary-color: #1a79ca;
+    --secondary-color: #009dcc;
+    --third-color: #f1f1f1;
+    --fourth-color: #1e1e1e;
+    --font-family: 'Open Sans', 'sans serif';    
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: var(--font-family);
+    color: var(--fourth-color);
+    background-color: var(--bg-color);
+}

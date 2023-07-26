@@ -1,0 +1,245 @@
+@import url(reset_app.css);
+@import url(global.css);
+
+  
+/* HEADER NAVBAR */
+
+.header__banner-clinica{
+    width: 100%;
+    height: 3.7rem;
+    background-image: url(../img/banner-clinica.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__navbar{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: solid .0625rem #eeeeec;
+    -webkit-box-shadow: 0 .5rem 1rem 0 rgba(15, 17, 15, 0.2);
+    box-shadow: 0 .5rem 1rem 0 rgba(15, 17, 15, 0.2);
+    background-color: #fff;
+}
+
+.header__links{
+    font-size: .95em;
+    position: relative;
+}
+
+.header__links:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: .125rem;
+    width: 98%;
+    background-color: var(--secondary-color);
+
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header__links:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header__links-icon{
+    color: var(--secondary-color);
+    transform: scale(.7);
+}
+
+.header__auth-btn{
+    padding: .3125rem .625rem;
+    font-size: .9375rem;
+    font-weight: 700;
+    color: #1a79ca;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: .3125rem;
+    border: .125rem solid var(--primary-color);
+    z-index: 100;
+    transition: .2s ease-in-out;
+}
+
+.header__auth-btn:hover{
+    color: #333;
+}
+  
+.header__title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    margin: 1.6rem;
+}
+  
+.header__username {
+    font-weight: bold;
+    color: #004f93;
+    text-transform: capitalize;
+}
+
+
+/* MAIN / TURNOS */
+
+.appointments {
+    margin: 1.25rem;
+    padding: 1.25rem;
+    background-color: #f5f5f5;
+    width: 60%;
+    margin: 0 auto;
+    border-top-left-radius: 1.5625rem;
+    border-top-right-radius: 1.5625rem;
+}
+  
+.appointments__title {
+    font-size: 1.25rem;
+    margin-left: .65rem;
+}
+  
+.appointments__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: .625rem;
+}
+
+.appointments__table-header {
+    font-weight: bold;
+    background-color: #004f93;
+    color: #fff;
+    padding: .625rem;
+}
+  
+.appointments__table-cell {
+    padding: 1.5rem 0 0 .45rem;
+}
+  
+.appointments__cancel-btn {
+    background-color: transparent;
+    border: none;
+    color: #004f93;
+    font-weight: 600;
+    border: #004f93 .0625rem solid;
+    border-radius: .3125rem;
+    padding: .3125rem .625rem;
+    cursor: pointer;
+    min-width: 6.25rem;
+}
+  
+.new-appointment {
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    background-color: #f5f5f5;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+}
+  
+.new-appointment__title {
+    font-size: 1.25rem;
+    margin: 0;
+}
+  
+.new-appointment__form {
+    margin-top: .625rem;
+}
+  
+.new-appointment__label {
+    display: block;
+    margin-bottom: .3125rem;
+}
+  
+.new-appointment__select,
+.new-appointment__input,
+.new-appointment__textarea {
+    width: 100%;
+    padding: .3125rem;
+    margin-bottom: .625rem;
+    resize: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+  
+.new-appointment__submit-btn {
+    background-color: transparent;
+    border: #004f93 .0625rem solid;
+    border-radius: .3125rem;
+    color: #004f93;
+    font-weight: 600;
+    padding: .625rem 1.25rem;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+    margin-top: 1.4rem;
+    width: 100%;
+    height: 10.5rem;
+    background-color: #004f93;
+}
+
+.footer__icons-page{
+    padding-top: 1.1rem;
+    text-align: center;
+    transform: scale(1.6);
+    color: #fff;
+}
+
+.fa-brands{
+    padding: .2rem;
+    cursor: pointer;
+}
+
+.footer__text-legal{
+    text-align: center;
+    color: #fff;
+    font-size: .8em;
+    padding-top: 1.2rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .appointments__table-header,
+    .appointments__table-cell {
+      padding: .3125rem;
+      font-size: .875rem;
+    }
+  
+    .appointments__cancel-btn {
+      padding: .1875rem .375rem;
+      font-size: .75rem;
+    }
+  
+    .new-appointment__select,
+    .new-appointment__input,
+    .new-appointment__textarea {
+      font-size: .875rem;
+    }
+  
+    .new-appointment__submit-btn {
+      padding: .5rem 1rem;
+      font-size: 1rem;
+    }
+  
+    .footer__text {
+      font-size: .75rem;
+    }
+}

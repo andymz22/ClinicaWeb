@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Paciente | Clínica Martinez</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/paciente.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20e9351c89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__banner-clinica"></div>
+        <nav class="header__navbar">
+            <a href="#" class="header__links">PACIENTES <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">COMUNIDAD <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">PLANES <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">CENTROS MEDICOS <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">CONTACTO <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+
+            <div class="header__auth-box-btn">
+              <a class="header__auth-btn" href="index.html">SALIR</a>
+            </div>
+        </nav>
+
+        <h1 class="header__title">Bienvenido/a <span class="header__username"></span></h1>
+    </header>
+
+    <main class="main">
+        <section class="appointments">
+            <h2 class="appointments__title">Mis Turnos</h2>
+            <table class="appointments__table">
+                <tr>
+                    <th class="appointments__table-header">Fecha</th>
+                    <th class="appointments__table-header">Hora</th>
+                    <th class="appointments__table-header">Especialidad</th>
+                    <th class="appointments__table-header">Médico</th>
+                    <th class="appointments__table-header">Observaciones</th>
+                    <th class="appointments__table-header">Cancelar</th>
+                </tr>
+                    <td class="appointments__table-cell">2023-07-24</td>
+                    <td class="appointments__table-cell">10:00</td>
+                    <td class="appointments__table-cell">Cardiología</td>
+                    <td class="appointments__table-cell">Dr. Favaloro</td>
+                    <td class="appointments__table-cell">Dolor abdominal agudo. positivo en fosa iliaca derecha: posible apendicitis.</td>
+                    <td class="appointments__table-cell"><button class="appointments__cancel-btn">Cancelar</button></td>
+                </tr>
+                <tr>
+                    <td class="appointments__table-cell">2023-12-02</td>
+                    <td class="appointments__table-cell">16:30</td>
+                    <td class="appointments__table-cell">Ginecología</td>
+                    <td class="appointments__table-cell">Dra. Berni</td>
+                    <td class="appointments__table-cell">Debilidad muscular progresiva: posible enfermedad neuromuscular.</td>
+                    <td class="appointments__table-cell"><button class="appointments__cancel-btn">Cancelar</button></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="new-appointment">
+            <h2 class="new-appointment__title">Reservar Nuevo Turno</h2>
+            <form class="new-appointment__form">
+                <label for="specialty" class="new-appointment__label">Especialidad:</label>
+                <select id="specialty" name="specialty" class="new-appointment__select" required>
+                    <option value="especialidad1">Cardiología</option>
+                    <option value="especialidad2">Dermatología</option>
+                    <option value="especialidad3">Ginecología</option>
+                    <option value="especialidad4">Oncología</option>
+                </select>
+                <label for="doctor" class="new-appointment__label">Médico:</label>
+                <select id="doctor" name="doctor" class="new-appointment__select" required>
+                    <option value="medico1">Dra. Lopez</option>
+                    <option value="medico2">Dr. Fernandez</option>
+                    <option value="medico3">Dr. Favaloro</option>
+                    <option value="medico4">Dra. Berni</option>
+                </select>
+                <label for="date" class="new-appointment__label">Fecha:</label>
+                <input type="date" id="date" name="date" class="new-appointment__input" required>
+                <label for="time" class="new-appointment__label">Hora:</label>
+                <input type="time" id="time" name="time" class="new-appointment__input" required>
+                <label for="email" class="new-appointment__label">Email:</label>
+                <input type="email" id="email" name="email" class="new-appointment__input" required>
+                <label for="observations" class="new-appointment__label">Observaciones:</label>
+                <textarea id="observations" name="observations" class="new-appointment__textarea"></textarea>
+                <button type="submit" class="new-appointment__submit-btn">Reservar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__icons-page">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p class="footer__text-legal">   
+          Recursos Humanos - Agencias - Asesoramiento a empresas - Servicios y Coberturas - Workplace health - Botón de arrepentimiento <br>
+          
+          Preguntas frecuentes - Términos y condiciones - Política de privacidad - Derecho de acceso a disposición DNPDP Nº XX/XX - Expte. XXXXX/XXXX <br>
+          
+          Superintendencia de Servicios de Salud - Órgano de Control de Obras Sociales y Entidades de Medicina Prepaga - 0800-XXX-SALUD (XXXXX) www.sssalud.gob.ar. R.N.E.M.P. N° 111834. <br>
+          
+          Reserva derechos sobre constitucionalidad ley 26682 y reglamentaciones</p>
+    </footer>
+
+    <script src="app/paciente.js"></script>
+</body>
+</html>

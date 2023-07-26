@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Doctor/a | Clínica Martinez</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/doctor.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20e9351c89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__banner-clinica"></div>
+        <nav class="header__navbar">
+            <a href="#" class="header__links">PACIENTES <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">COMUNIDAD <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">PLANES <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">CENTROS MEDICOS <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+            <a href="#" class="header__links">CONTACTO <i class="fa-solid fa-angle-down header__links-icon"></i></a>
+
+            <div class="header__auth-box-btn">
+              <a class="header__auth-btn" href="index.html">SALIR</a>
+            </div>
+        </nav>
+        <h1 class="header__title">Bienvenido/a Dr. <span class="header__username"></span></h1>
+    </header>
+
+    <main class="main"> 
+        <section class="doctor-appointments">
+          <h2 class="doctor-appointments__title">Mis Turnos</h2>
+          <div class="doctor-appointments__week">
+            <div class="doctor-appointments__day">
+              <h3 class="doctor-appointments__day-title">Lunes</h3>
+              <div class="doctor-appointments__cards">
+                <div class="appointment-card">
+                  <div class="appointment-card__time">16:00 p.m</div>
+                  <div class="appointment-card__patient">Ian Schivalocchi</div>
+                  <div class="appointment-card__observations">Pérdida de peso inexplicada, fatiga, sudoración nocturna: sospecha de enfermedad maligna.</div>
+                </div>
+              </div> 
+            </div>
+      
+            <div class="doctor-appointments__day">
+              <h3 class="doctor-appointments__day-title">Martes</h3>
+              <div class="doctor-appointments__cards">
+                <div class="appointment-card">
+                  <div class="appointment-card__time">11:00 p.m</div>
+                  <div class="appointment-card__patient">Diego Roman Rios</div>
+                  <div class="appointment-card__observations">Mareos, palpitaciones, sensación de desmayo: sospecha de arritmia cardíaca.</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="doctor-appointments__day">
+                <h3 class="doctor-appointments__day-title">Miercoles</h3>
+                <div class="doctor-appointments__cards">
+                  <div class="appointment-card">
+                    <div class="appointment-card__time">09:30 a.m</div>
+                    <div class="appointment-card__patient">Francisco Leon Brnas</div>
+                    <div class="appointment-card__observations">Fiebre alta, dolor de garganta, amígdalas inflamadas con exudado: posible faringitis estreptocócica.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="doctor-appointments__day">
+                <h3 class="doctor-appointments__day-title">Jueves</h3>
+                <div class="doctor-appointments__cards">
+                  <div class="appointment-card">
+                    <div class="appointment-card__time">12:00 a.m</div>
+                    <div class="appointment-card__patient">Silvina Martinez</div>
+                    <div class="appointment-card__observations">Fatiga, dificultad para concentrarse, alteraciones del sueño: sospecha de estrés o agotamiento.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="doctor-appointments__day">
+                <h3 class="doctor-appointments__day-title">Viernes</h3>
+                <div class="doctor-appointments__cards">
+                  <div class="appointment-card">
+                    <div class="appointment-card__time">13:30 p.m</div>
+                    <div class="appointment-card__patient">Miriam Rossi</div>
+                    <div class="appointment-card__observations">Sensación de ardor al orinar, necesidad frecuente de orinar: posible infección del tracto urinario.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="doctor-appointments__day">
+                <h3 class="doctor-appointments__day-title">Sabado</h3>
+                <div class="doctor-appointments__cards">
+                  <div class="appointment-card">
+                    <div class="appointment-card__time">15:00 p.m</div>
+                    <div class="appointment-card__patient">Nahuel Baez</div>
+                    <div class="appointment-card__observations">Picazón en la piel, enrojecimiento y pequeñas ampollas: posible dermatitis alérgica de contacto.</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+      </main>
+
+    <footer class="footer">
+        <div class="footer__icons-page">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p class="footer__text-legal">   
+          Recursos Humanos - Agencias - Asesoramiento a empresas - Servicios y Coberturas - Workplace health - Botón de arrepentimiento <br>
+          
+          Preguntas frecuentes - Términos y condiciones - Política de privacidad - Derecho de acceso a disposición DNPDP Nº XX/XX - Expte. XXXXX/XXXX <br>
+          
+          Superintendencia de Servicios de Salud - Órgano de Control de Obras Sociales y Entidades de Medicina Prepaga - 0800-XXX-SALUD (XXXXX) www.sssalud.gob.ar. R.N.E.M.P. N° 111834. <br>
+          
+          Reserva derechos sobre constitucionalidad ley 26682 y reglamentaciones</p>
+    </footer>
+
+    <script src="app/doctor.js"></script>
+</body>
+</html>
